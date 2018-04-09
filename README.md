@@ -1,0 +1,1 @@
+# copr-vte3-ng-spec
