@@ -7,8 +7,10 @@ Summary:        Terminal emulator library
 
 License:        LGPLv2+
 URL:            https://github.com/thestinger/vte-ng
-Source0:        https://github.com/thestinger/vte-ng/archive/%{version}.tar.gz 
+Source0:        https://github.com/thestinger/vte-ng/archive/%{version}.tar.gz
 
+BuildRequires:  gcc-c++
+BuildRequires:  make
 BuildRequires:  gettext
 BuildRequires:  pkgconfig(gnutls)
 BuildRequires:  pkgconfig(libpcre2-8) >= 10.00
