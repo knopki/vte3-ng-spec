@@ -1,12 +1,12 @@
 %global apiver 2.91
 
 Name:           vte3-ng
-Version:        0.50.2.a
+Version:        0.54.2.a
 Release:        1%{?dist}
 Summary:        Terminal emulator library
 
 License:        LGPLv2+
-URL:            https://github.com/thestinger/vte-ng
+URL:            https://github.com/thesting222er/vte-ng
 Source0:        https://github.com/thestinger/vte-ng/archive/%{version}.tar.gz
 
 BuildRequires:  gcc-c++
@@ -90,8 +90,8 @@ rm -f $RPM_BUILD_ROOT%{_libdir}/*.la
 
 
 %files -f vte-%{apiver}.lang
-%license COPYING
-%doc NEWS README
+%license COPYING.GPL3 COPYING.LGPL2 COPYING.LGPL3
+%doc NEWS AUTHORS
 %{_libdir}/libvte-%{apiver}.so.0*
 %{_libdir}/girepository-1.0/
 
@@ -110,3 +110,5 @@ rm -f $RPM_BUILD_ROOT%{_libdir}/*.la
 
 
 %changelog
+* Sat Nov 17 2018 Sergey Korolev <korolev.srg@gmail.com> - 0.54.2.a-1
+- New release
